@@ -1,3 +1,9 @@
+// Variables
+@import "./settings/variables.scss";
+
+// Typography
+@import "./typography/typography.scss";
+
 // Normalizer
 @import "./normalizer/normalizer.scss";
 
@@ -5,3 +11,4 @@
 
 // Components
 @import "./components/button.scss";
+@import "./components//topbar.scss";

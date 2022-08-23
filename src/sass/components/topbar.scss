@@ -1,0 +1,37 @@
+.topbar {
+  width: 100%;
+  height: 80px;
+  padding: 0 26px;
+  background-color: $color-primary;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo_container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    .logo_image-container {
+      .logo_image {
+        width: 50px;
+        height: 50px;
+      }
+
+      .logo_image path {
+        fill: $color-white;
+      }
+    }
+
+    h1 {
+      color: $color-white;
+      font-size: 20px;
+      font-family: "Titillium Web", sans-serif;
+      font-weight: 900;
+      margin-left: 4px;
+    }
+  }
+
+  .searchbar_container {
+  }
+}

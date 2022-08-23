@@ -1,4 +1,4 @@
-import LogoSvg from "../../shared/assets/img/logo.svg";
+import { ReactComponent as LogoSvg } from "../../shared/assets/img/logo.svg";
 
 const Topbar = () => {
   return (
@@ -6,7 +6,8 @@ const Topbar = () => {
       {/* // Logo */}
       <div className="logo_container">
         <div className="logo_image-container">
-          <img src={LogoSvg} />
+          {/* <img src={LogoSvg} className="logo_image" /> */}
+          <LogoSvg className="logo_image" />
         </div>
         <h1>VIKINGER</h1>
       </div>

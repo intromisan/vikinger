@@ -30,14 +30,16 @@ const Topbar = () => {
             <a href="#">Faqs</a>
           </li>
           <li>
-            <button>...</button>
+            <button>
+              <i className="bi bi-three-dots"></i>
+            </button>
           </li>
         </ul>
       </nav>
 
       {/* // Searchbar */}
       <div className="searchbar_container">
-        <input />
+        <input placeholder="Search here for people or groups" />
         <div className="searchbar_icon-container">
           <i className="bi bi-search"></i>
         </div>

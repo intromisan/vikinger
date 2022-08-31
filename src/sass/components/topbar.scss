@@ -1,5 +1,5 @@
 .topbar {
-  width: 100%;
+  max-width: 100vw;
   height: 80px;
   padding: 0 26px;
   background-color: $color-primary;
@@ -29,6 +29,16 @@
       font-family: "Titillium Web", sans-serif;
       font-weight: 900;
       margin-left: 4px;
+    }
+  }
+
+  .nav-container {
+    display: flex;
+    align-items: center;
+
+    .action-item {
+      font-size: 22px;
+      margin-right: 26px;
     }
   }
 
@@ -101,6 +111,66 @@
       font-size: 19px;
       color: $color-icon-light;
       opacity: 0.6;
+    }
+  }
+
+  .experience-indicator_container {
+    width: 110px;
+    display: flex;
+    flex-direction: column;
+
+    .experience-indicator_info {
+      width: 100%;
+      font-weight: 800;
+      margin-bottom: 6px;
+      display: flex;
+      justify-content: space-between;
+      color: $color-white;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+
+    progress {
+      width: 100%;
+      height: 4px;
+      background-color: $color-primary;
+
+      &::-webkit-progress-bar,
+      &::-webkit-progress-value {
+        border-radius: 7px;
+        height: 4px;
+      }
+      &::-webkit-progress-bar {
+        background-color: $color-primary-dark;
+      }
+      &::-webkit-progress-value {
+        background-color: $color-accent;
+      }
+    }
+  }
+
+  .actions-menu_container {
+    display: flex;
+    align-items: center;
+    .actions-menu_group {
+      padding: 5px 18px;
+      border-left: 1px solid $color-icon-light;
+      border-right: 1px solid $color-icon-light;
+      margin-right: 18px;
+    }
+  }
+  .action-item {
+    display: inline-block;
+    margin: 0 14px;
+    font-size: 20px;
+    color: $color-icon-light;
+    // opacity: 0.6;
+
+    &:hover {
+      color: white;
+      transition: 150ms ease-in-out;
+      cursor: pointer;
+      transition: color 0.2s ease-in-out;
     }
   }
 }

@@ -1,0 +1,256 @@
+.App {
+  background-color: $color-background;
+}
+
+.sidebar_minimized {
+  background-color: $color-white;
+  height: calc(100vh - 80px);
+  width: 80px;
+  padding: 15px 0;
+  box-shadow: 0 0 40px 0 #5e5c9a0f;
+
+  .user-avatar-holder {
+    background: $color-white;
+    width: calc(500px / 8);
+    height: calc(500px / 8);
+    @include centerChild;
+    margin: 0 auto;
+    clip-path: polygon(
+      47.5% 5.66987%,
+      48.2899% 5.30154%,
+      49.13176% 5.07596%,
+      50% 5%,
+      50.86824% 5.07596%,
+      51.7101% 5.30154%,
+      52.5% 5.66987%,
+      87.14102% 25.66987%,
+      87.85495% 26.16978%,
+      88.47124% 26.78606%,
+      88.97114% 27.5%,
+      89.33948% 28.2899%,
+      89.56505% 29.13176%,
+      89.64102% 30%,
+      89.64102% 70%,
+      89.56505% 70.86824%,
+      89.33948% 71.7101%,
+      88.97114% 72.5%,
+      88.47124% 73.21394%,
+      87.85495% 73.83022%,
+      87.14102% 74.33013%,
+      52.5% 94.33013%,
+      51.7101% 94.69846%,
+      50.86824% 94.92404%,
+      50% 95%,
+      49.13176% 94.92404%,
+      48.2899% 94.69846%,
+      47.5% 94.33013%,
+      12.85898% 74.33013%,
+      12.14505% 73.83022%,
+      11.52876% 73.21394%,
+      11.02886% 72.5%,
+      10.66052% 71.7101%,
+      10.43495% 70.86824%,
+      10.35898% 70%,
+      10.35898% 30%,
+      10.43495% 29.13176%,
+      10.66052% 28.2899%,
+      11.02886% 27.5%,
+      11.52876% 26.78606%,
+      12.14505% 26.16978%,
+      12.85898% 25.66987%
+    );
+    position: relative;
+    overflow: hidden;
+  }
+  .profile-image-outer {
+    background: $color-white;
+    width: calc(360px / 8);
+    height: calc(360px / 8);
+    clip-path: polygon(
+      47.5% 5.66987%,
+      48.2899% 5.30154%,
+      49.13176% 5.07596%,
+      50% 5%,
+      50.86824% 5.07596%,
+      51.7101% 5.30154%,
+      52.5% 5.66987%,
+      87.14102% 25.66987%,
+      87.85495% 26.16978%,
+      88.47124% 26.78606%,
+      88.97114% 27.5%,
+      89.33948% 28.2899%,
+      89.56505% 29.13176%,
+      89.64102% 30%,
+      89.64102% 70%,
+      89.56505% 70.86824%,
+      89.33948% 71.7101%,
+      88.97114% 72.5%,
+      88.47124% 73.21394%,
+      87.85495% 73.83022%,
+      87.14102% 74.33013%,
+      52.5% 94.33013%,
+      51.7101% 94.69846%,
+      50.86824% 94.92404%,
+      50% 95%,
+      49.13176% 94.92404%,
+      48.2899% 94.69846%,
+      47.5% 94.33013%,
+      12.85898% 74.33013%,
+      12.14505% 73.83022%,
+      11.52876% 73.21394%,
+      11.02886% 72.5%,
+      10.66052% 71.7101%,
+      10.43495% 70.86824%,
+      10.35898% 70%,
+      10.35898% 30%,
+      10.43495% 29.13176%,
+      10.66052% 28.2899%,
+      11.02886% 27.5%,
+      11.52876% 26.78606%,
+      12.14505% 26.16978%,
+      12.85898% 25.66987%
+    );
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .profile-image {
+    background: $color-white;
+    width: calc(330px / 8);
+    height: calc(330px / 8);
+    clip-path: polygon(
+      47.5% 5.66987%,
+      48.2899% 5.30154%,
+      49.13176% 5.07596%,
+      50% 5%,
+      50.86824% 5.07596%,
+      51.7101% 5.30154%,
+      52.5% 5.66987%,
+      87.14102% 25.66987%,
+      87.85495% 26.16978%,
+      88.47124% 26.78606%,
+      88.97114% 27.5%,
+      89.33948% 28.2899%,
+      89.56505% 29.13176%,
+      89.64102% 30%,
+      89.64102% 70%,
+      89.56505% 70.86824%,
+      89.33948% 71.7101%,
+      88.97114% 72.5%,
+      88.47124% 73.21394%,
+      87.85495% 73.83022%,
+      87.14102% 74.33013%,
+      52.5% 94.33013%,
+      51.7101% 94.69846%,
+      50.86824% 94.92404%,
+      50% 95%,
+      49.13176% 94.92404%,
+      48.2899% 94.69846%,
+      47.5% 94.33013%,
+      12.85898% 74.33013%,
+      12.14505% 73.83022%,
+      11.52876% 73.21394%,
+      11.02886% 72.5%,
+      10.66052% 71.7101%,
+      10.43495% 70.86824%,
+      10.35898% 70%,
+      10.35898% 30%,
+      10.43495% 29.13176%,
+      10.66052% 28.2899%,
+      11.02886% 27.5%,
+      11.52876% 26.78606%,
+      12.14505% 26.16978%,
+      12.85898% 25.66987%
+    );
+    position: relative;
+    overflow: hidden;
+  }
+  .profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .progress-bar {
+    position: absolute;
+    top: 50%;
+    background: transparent;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(400px / 8);
+    height: calc(400px / 8);
+  }
+  .progress {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+  }
+  .progress .track,
+  .progress .fill {
+    fill: rgba(0, 0, 0, 0);
+    stroke-width: 40;
+    transform: translate(75px, 685px) rotate(-90deg);
+  }
+  .progress .track {
+    stroke: #dfdfdf;
+  }
+  .progress .fill {
+    stroke: url(#gradient);
+    stroke-linecap: round;
+    stroke-dasharray: 2160;
+    stroke-dashoffset: 2160;
+    transition: stroke-dashoffset 1s;
+    stroke-linejoin: round;
+  }
+  .progress .fill {
+    stroke: url(#gradient);
+  }
+
+  .sidebar_menu {
+    margin-top: 20px;
+
+    .menu-item_container {
+      width: 48px;
+      height: 48px;
+      @include centerChild;
+      margin: 0 auto 10px;
+      position: relative;
+      color: $color-text-light;
+      cursor: pointer;
+      border-radius: 10px;
+
+      i {
+        font-size: 22px;
+      }
+
+      .menu-item_tooltip {
+        position: absolute;
+        left: 65px;
+        background-color: #3e3f5e;
+        padding: 3px 12px;
+        border-radius: 20px;
+        pointer-events: none;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+
+        span {
+          font-weight: 700;
+          font-size: 12px;
+          color: $color-white;
+        }
+      }
+
+      &:hover {
+        color: $color-accent;
+        -webkit-box-shadow: 0px 0px 40px 0px rgba(94, 92, 154, 0.15);
+        box-shadow: 0px 0px 40px 0px rgba(94, 92, 154, 0.15);
+
+        .menu-item_tooltip {
+          opacity: 1;
+          left: 55px;
+        }
+      }
+    }
+  }
+}

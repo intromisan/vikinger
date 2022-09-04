@@ -1,5 +1,6 @@
 // Variables
 @import "./settings/variables.scss";
+@import "./settings/mixins.scss";
 
 // Typography
 @import "./typography/typography.scss";
@@ -12,3 +13,4 @@
 // Components
 @import "./components/button.scss";
 @import "./components//topbar.scss";
+@import "./components/sidebar.scss";

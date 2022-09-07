@@ -1,6 +1,5 @@
 .topbar {
-  max-width: 100vw;
-  height: 80px;
+  grid-area: topbar;
   padding: 0 26px;
   background-color: $color-primary;
   display: flex;

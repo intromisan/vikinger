@@ -11,7 +11,14 @@ const Layout: FC<LayoutProps> = ({ children }) => {
     <div className="layout_container">
       <Topbar />
       <Sidebar />
-      <div className="layout_content">{children}</div>
+      <div className="layout_content">
+        <div className="content-grid">{children}</div>
+        <div
+          style={{ width: "80px", backgroundColor: "white", height: "100%" }}
+        >
+          h
+        </div>
+      </div>
     </div>
   );
 };

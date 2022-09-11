@@ -9,9 +9,10 @@
 @import "./normalizer/normalizer.scss";
 
 // Containers
-
+@import "./containers/profile-timeline.scss";
 // Components
 @import "./components/button.scss";
 @import "./components//topbar.scss";
 @import "./components/sidebar.scss";
 @import "./components/layout.scss";
+@import "./components/card.scss";

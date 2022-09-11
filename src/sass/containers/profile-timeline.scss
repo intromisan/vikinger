@@ -1,0 +1,13 @@
+.hero_container {
+  width: 100%;
+  background-image: url(https://odindesignthemes.com/vikinger/img/cover/01.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+
+  .hero_info {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+  }
+}

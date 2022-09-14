@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import Card from "../shared/components/Card";
 import HeroCard from "./components/HeroCard";
 
 const ProfileTimeline = () => {

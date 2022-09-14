@@ -1,13 +1,100 @@
 .hero_container {
-  width: 100%;
-  background-image: url(https://odindesignthemes.com/vikinger/img/cover/01.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 300px;
+  .hero_background {
+    background-image: url(https://odindesignthemes.com/vikinger/img/cover/01.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+  }
 
   .hero_info {
-    width: 100px;
-    height: 100px;
-    background-color: white;
+    height: 126px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .hero_info-left {
+    display: flex;
+    padding-top: 52px;
+    padding-left: 40px;
+    .user-stat {
+      display: flex;
+      height: auto;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 30px;
+      position: relative;
+
+      &::after {
+        content: "";
+        height: 20px;
+        width: 1px;
+        background-color: $color-border;
+        position: absolute;
+        top: 10px;
+        right: 0;
+      }
+
+      &:last-of-type {
+        &::after {
+          display: none;
+        }
+      }
+
+      .user-stat_text {
+        font-size: 22px;
+        font-weight: 700;
+        color: $color-text-dark;
+      }
+
+      .user-stat_title {
+        font-size: 12px;
+        margin-top: 12px;
+        font-weight: 700;
+        color: $color-text-light;
+        text-transform: uppercase;
+      }
+
+      img {
+        width: 24px;
+        height: 16px;
+        margin-bottom: 6px;
+      }
+    }
+  }
+
+  .hero_info-right {
+    display: flex;
+    padding-top: 52px;
+    margin-right: 32px;
+
+    .user-social {
+      width: 40px;
+      height: 40px;
+      @include centerChild;
+      color: $color-white;
+      font-size: 12px;
+      border-radius: 10px;
+      margin-right: 12px;
+      transition: transform 0.3s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
+  }
+
+  .hero_info-user {
+    height: 210px;
+    width: 148px;
+    background-color: $color-white;
+    position: absolute;
+    bottom: 26px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid black;
   }
 }

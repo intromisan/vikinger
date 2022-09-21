@@ -13,6 +13,18 @@
     display: flex;
     justify-content: space-between;
     position: relative;
+
+    .hero_buttons {
+      width: 376px;
+      display: flex;
+      position: absolute;
+      right: 32px;
+      top: -40px;
+
+      .btn:first-of-type {
+        margin-right: 16px;
+      }
+    }
   }
 
   .hero_info-left {

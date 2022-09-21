@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import Button from "../../shared/components/Button";
 import Card from "../../shared/components/Card";
 import UserSocial from "./UserSocial";
 import UserStat from "./UserStat";
@@ -28,6 +29,10 @@ const HeroCard: FC = () => {
             <UserSocial socialIcon="youtube" bgColor="#fd434f" />
             <UserSocial socialIcon="telegram" bgColor="#0088CC" />
             <UserSocial socialIcon="discord" bgColor="#7289da" />
+          </div>
+          <div className="hero_buttons">
+            <Button text="Add Friend +" color="primary" />
+            <Button text="Send Message" color="secondary" />
           </div>
         </div>
       </div>

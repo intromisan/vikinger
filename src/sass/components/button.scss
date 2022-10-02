@@ -33,4 +33,9 @@
       border: 2px solid $color-accent;
     }
   }
+
+  &:disabled {
+    background-color: gray;
+    pointer-events: none;
+  }
 }

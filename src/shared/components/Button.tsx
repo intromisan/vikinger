@@ -1,4 +1,5 @@
 import React, { FC, CSSProperties } from "react";
+import classNames from "classnames";
 
 interface ButtonProps {
   text: string;
@@ -25,9 +26,14 @@ const Button: FC<ButtonProps> = ({
   color,
   outline,
 }) => {
+  const buttonClasses = classNames({
+    btn: true,
+    "btn-outline": outline,
+  });
+
   return (
     <button
-      className={`btn btn-${color} ${outline && "btn-outline"}`}
+      className={`${buttonClasses} btn-${color}`}
       disabled={disabled}
       onClick={onClick}
       style={style}

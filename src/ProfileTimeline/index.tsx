@@ -17,6 +17,7 @@ const ProfileTimeline = () => {
       <Modal isOpen={modalOpen} onClose={modalToggle}>
         <h4>I am inside of the modal</h4>
         <p>I am as well</p>
+        <p>Update from different branch</p>
       </Modal>
     </div>
   );

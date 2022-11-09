@@ -29,7 +29,6 @@ export const todoSlice = createSlice({
       state.todoList.filter((todoItem) => todoItem.id !== action.payload);
     },
     toggleModal: (state) => {
-      console.log("calling");
       state.isModalOpen = !state.isModalOpen;
     },
   },

@@ -1,0 +1,118 @@
+.landing {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../shared/assets/img/landing-background.jpg");
+  background-size: cover;
+  background-position: 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  .landing_decoration {
+    width: 64%;
+    height: 140%;
+    border-radius: 50%;
+    background: url("../../shared/assets/img/dot-texture.png") repeat 0 0
+      $color-white;
+    position: absolute;
+    top: -20%;
+    right: -32%;
+    pointer-events: none;
+  }
+
+  .landing_info {
+    width: 584px;
+    position: absolute;
+    top: 16%;
+    left: 13%;
+    .landing_info-logo {
+      display: flex;
+      justify-content: center;
+
+      .logo_img path {
+        fill: $color-white;
+      }
+
+      .logo_img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+    .landing_info-subtitle,
+    .landing_info-title,
+    .landing_info-text {
+      color: $color-white;
+      text-align: center;
+    }
+
+    .landing_info-subtitle,
+    .landing_info-title {
+      text-transform: uppercase;
+    }
+
+    .landing_info-subtitle {
+      margin-top: 36px;
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    .landing_info-title {
+      font-family: "Titillium Web", sans-serif;
+      font-size: 6.5rem;
+      font-weight: 900;
+      position: relative;
+      top: -10px;
+    }
+
+    .landing_info-text {
+      width: 384px;
+      margin: 30px auto 0;
+      font-size: 1.125rem;
+      line-height: 1.33em;
+      font-weight: 500;
+    }
+
+    .landing_info-switch {
+      margin-top: 90px;
+      display: flex;
+      justify-content: center;
+
+      .switch-button {
+        width: 180px;
+        color: $color-white;
+        height: 54px;
+        border: 1px solid $color-white;
+        font-weight: 700;
+        line-height: 54px;
+        text-align: center;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        cursor: pointer;
+
+        &.active {
+          color: $color-black;
+          background-color: $color-white;
+          cursor: default;
+        }
+
+        &:first-child {
+          border-top-left-radius: 12px;
+          border-bottom-left-radius: 12px;
+        }
+
+        &:last-child {
+          border-top-right-radius: 12px;
+          border-bottom-right-radius: 12px;
+        }
+      }
+    }
+  }
+
+  .landing_form {
+    width: 484px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 13px;
+  }
+}

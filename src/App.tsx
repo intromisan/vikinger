@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import Auth from "./Auth";
 import Layout from "./layout";
 import Newsfeed from "./Newsfeed";
 import Overview from "./Overview";
@@ -6,6 +7,7 @@ import ProfileTimeline from "./ProfileTimeline";
 
 function App() {
   return (
+    // <Auth />
     <Layout>
       <Routes>
         <Route path="/">
